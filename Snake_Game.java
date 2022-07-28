@@ -218,19 +218,5 @@ public class Snake_Game {
         Board board = new Board(10,10);
         Snake_Game newGame = new Snake_Game(initSnake, board);
         newGame.GameOver = false;
-
-        newGame.direction = RIGHT;
-        for(int i=0; i<5; i++){
-            if(i == 2){
-                newGame.board.generateFood();
-            }
-            newGame.update();
-            if(i == 3){
-                newGame.direction = RIGHT;
-            }
-            if(newGame.GameOver == true){
-                break;
-            }
-        }
     }
 }
